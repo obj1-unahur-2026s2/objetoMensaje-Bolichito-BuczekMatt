@@ -1,0 +1,136 @@
+
+
+/*---------------------Colores--------------------*/
+
+object celeste {
+  method esDeColorFuerte() {
+    return false
+  }
+}
+
+object pardo {
+  method esDeColorFuerte() {
+    return false
+  }
+}
+
+object verde {
+  method esDeColorFuerte() {
+    return true
+  }
+}
+
+object rojo {
+  method esDeColorFuerte() {
+    return true
+  }
+}
+
+/*---------------------Materiales--------------------*/
+
+object cobre {
+  method esBrillante() {
+    return true
+  }
+}
+
+object vidrio {
+  method esBrillante() {
+    return true
+  }
+}
+
+object lino {
+  method esBrillante() {
+    return false
+  }
+}
+object madera {
+  method esBrillante() {
+    return false
+  }
+}
+object cuero {
+  method esBrillante() {
+    return false
+  }
+}
+
+/*---------------------Cosas--------------------*/
+
+object remera {
+  method color () = rojo
+  method material () = lino
+  method peso () = 800
+
+}
+object pelota {
+  method color () = pardo
+  method material () = cuero
+  method peso () = 1300
+
+}
+
+object biblioteca {
+  var peso = 8000
+  method color () = verde
+  method material () = madera
+  method peso (){
+    return peso
+  }
+  method cambiarPeso(nuevoPeso) {
+    peso = nuevoPeso
+  }
+}
+
+object munieco {
+  method color () =  celeste
+  method material () = vidrio
+  var peso = 500
+
+  method cambiarPeso(nuevoPeso) {
+    peso = nuevoPeso
+  }
+  method peso() {
+    return peso
+  }
+  
+}
+
+object placa {
+  var color = celeste
+  var peso = 1000
+
+
+  method material () = cobre
+
+  method cambiarColor(unColor) {
+    color = unColor
+  }
+  method color() {
+    return color
+  }
+  method cambiarPeso(nuevoPeso) {
+    peso = nuevoPeso
+  }
+  method peso() {
+    return peso
+  }
+}
+
+
+
+
+/*
+Colores:
+naranja
+
+
+Cosas
+
+arito
+banquito
+bolichito
+cajita
+
+*/
