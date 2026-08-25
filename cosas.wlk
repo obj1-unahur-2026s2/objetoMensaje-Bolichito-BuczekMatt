@@ -26,6 +26,12 @@ object rojo {
   }
 }
 
+object naranja {
+  method esDeColorFuerte() {
+    return true
+  }
+}
+
 /*---------------------Materiales--------------------*/
 
 object cobre {
@@ -117,20 +123,44 @@ object placa {
     return peso
   }
 }
+object arito {
+  method color() = celeste
+  method peso() = 180
+  method material () = cobre
+}
+object banquito {
+  var color = naranja
+  method peso() = 1700
+  method material () = madera
 
+  method cambiarColor(unColor) {
+    color = unColor
+  }
+  method color() {
+    return color
+  }
+}
+object cajita {
+  var color = rojo
+  method peso() = 1700
+  method material () = cobre
+
+  method cambiarColor(unColor) {
+    color = unColor
+  }
+  method color() {
+    return color
+  }
+  method guardarAdentro(unaCosa) {
+    
+  }
+}
 
 
 
 /*
-Colores:
-naranja
-
 
 Cosas
-
-arito
-banquito
 bolichito
-cajita
 
 */
