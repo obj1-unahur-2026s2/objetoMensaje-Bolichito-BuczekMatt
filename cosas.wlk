@@ -141,26 +141,26 @@ object banquito {
   }
 }
 object cajita {
+
   var color = rojo
-  method peso() = 1700
-  method material () = cobre
+  var objetoAdentro = arito
+
+  method peso() {
+    return 400 + objetoAdentro.peso()
+  }
+
+  method material() = cobre
 
   method cambiarColor(unColor) {
     color = unColor
   }
+
   method color() {
     return color
   }
+
   method guardarAdentro(unaCosa) {
-    
+    objetoAdentro = unaCosa
   }
+
 }
-
-
-
-/*
-
-Cosas
-bolichito
-
-*/
